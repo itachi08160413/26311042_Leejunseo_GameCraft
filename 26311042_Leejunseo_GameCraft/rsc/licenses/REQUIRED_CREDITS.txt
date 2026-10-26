@@ -1,0 +1,19 @@
+Required credits for use in the finished game:
+
+Kitchen pack:
+PtPt - https://pt-pt.itch.io
+
+Dessert Icons (includes pancakes):
+Artwork by Ellie Jerram (Ellielza)
+https://luminleveret.itch.io/desserts
+Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+If edited, indicate that the artwork was modified.
+
+Music:
+"Carefree" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+
+Jua font: retain fonts/OFL.txt when distributing the font.
+
+Kitchen alternative: free personal/commercial use and modification; no standalone redistribution/resale, hate speech, NFTs or AI training.
