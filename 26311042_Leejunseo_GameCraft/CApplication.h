@@ -13,7 +13,7 @@ public:
     int Update();
     int Render();
     int Destroy();
-    Screen m_screen = Screen::Title;
+    Screen m_screen = Screen::Play;
     SceneGameBegin m_sceneBegin;
     SceneGamePlay m_scenePlay;
     SceneGameResult m_sceneResult;

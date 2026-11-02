@@ -14,6 +14,7 @@ int CApplication::Init()
     g2_SetRender(RenderAPP);
     g2_SetClearColor(0xFF101923);
     g2_SetStateShow(false);
+    m_scenePlay.Init();
     return 0;
 }
 
@@ -41,6 +42,7 @@ int CApplication::Render()
 
 int CApplication::Destroy()
 {
+    m_scenePlay.Destroy();
     g2_DestroyWin();
     return 0;
 }
