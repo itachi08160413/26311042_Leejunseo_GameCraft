@@ -1,4 +1,4 @@
-#include "CApplication.h"
+﻿#include "CApplication.h"
 
 namespace
 {
@@ -9,17 +9,25 @@ namespace
 int CApplication::Init()
 {
     g2_InitSdk();
-    g2_CreateWin(100, 100, 1280, 720, "Game Project", true);
+    g2_CreateWin(100, 100, 1280, 720, "Pancake - GameCraft", true);
     g2_SetFrameMove(UpdateAPP);
     g2_SetRender(RenderAPP);
     g2_SetClearColor(0xFF101923);
     g2_SetStateShow(false);
     m_scenePlay.Init();
+    // Music begins with the first round, not on the title screen.
+
     return 0;
 }
 
 int CApplication::Update()
 {
+    const bool enter = (GetAsyncKeyState(VK_RETURN) & 0x8000) != 0;
+    if (GetForegroundWindow() == g2_GetHwnd()) {
+        if (GetAsyncKeyState(VK_ESCAPE) & 0x8000) PostMessage(g2_GetHwnd(), WM_CLOSE, 0, 0);
+        if (enter && !m_enter && m_screen != Screen::Play) { m_scenePlay.Reset(); m_screen = Screen::Play; }
+    }
+    m_enter = enter;
     switch (m_screen)
     {
     case Screen::Title: m_sceneBegin.Update(); break;

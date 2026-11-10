@@ -1,8 +1,8 @@
-// link the 2d game library
+Ôªø// link the 2d game library
 #if defined(_DEBUG)
-#if defined(_M_X64) // 64-bit æ∆≈∞≈ÿ√≥
+#if defined(_M_X64)
 #pragma comment(lib, "glc2d_x64_debug.lib")
-#elif defined(_M_IX86) // 32-bit æ∆≈∞≈ÿ√≥
+#elif defined(_M_IX86)
 #pragma comment(lib, "glc2d_win32_debug.lib")
 #endif
 #else

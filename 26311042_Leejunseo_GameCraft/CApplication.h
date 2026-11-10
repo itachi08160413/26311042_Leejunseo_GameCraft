@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "glc2d.h"
 #include "SceneGameBegin.h"
 #include "SceneGamePlay.h"
@@ -13,7 +13,8 @@ public:
     int Update();
     int Render();
     int Destroy();
-    Screen m_screen = Screen::Play;
+    Screen m_screen = Screen::Title;
+    bool m_enter = false;
     SceneGameBegin m_sceneBegin;
     SceneGamePlay m_scenePlay;
     SceneGameResult m_sceneResult;
